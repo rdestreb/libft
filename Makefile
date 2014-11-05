@@ -6,7 +6,7 @@
 #    By: rdestreb <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/03 12:22:32 by rdestreb          #+#    #+#              #
-#    Updated: 2014/11/05 09:45:55 by rdestreb         ###   ########.fr        #
+#    Updated: 2014/11/05 10:17:08 by rdestreb         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -28,6 +28,7 @@ SRCSFILES =		ft_memset.c \
 				ft_strcpy.c \
 				ft_strncpy.c \
 				ft_strcat.c \
+				ft_strncat.c \
 
 OBJS = $(SRCS:.c=.o)
 
