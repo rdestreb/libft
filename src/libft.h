@@ -6,7 +6,7 @@
 /*   By: rdestreb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 14:23:08 by rdestreb          #+#    #+#             */
-/*   Updated: 2014/11/05 13:54:53 by rdestreb         ###   ########.fr       */
+/*   Updated: 2014/11/05 15:30:14 by rdestreb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstlen);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strstr(const char *tosearch, const char *tofind);
+char	*ft_strnstr(const char *tosearch, const char *tofind, size_t n);
 
 void	ft_strclr(char *s);
 void	ft_striter(char *s, void (*f)(char *));
