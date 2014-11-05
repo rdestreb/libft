@@ -6,7 +6,7 @@
 #    By: rdestreb <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/03 12:22:32 by rdestreb          #+#    #+#              #
-#    Updated: 2014/11/03 12:22:56 by rdestreb         ###   ########.fr        #
+#    Updated: 2014/11/05 08:54:05 by rdestreb         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -19,7 +19,14 @@ HEADERDIR = ./hdr/
 HEADER = $(addprefix $(HEADERDIR), $(HEADERFILES))
 SRCSDIR = ./src/
 SRCS = $(addprefix $(SRCSDIR), $(SRCSFILES))
-SRCSFILES =		ft_putchar.c \
+SRCSFILES =		ft_memset.c \
+				ft_bzero.c \
+				ft_memcpy.c \
+				ft_memccpy.c \
+				ft_strlen.c \
+				ft_strdup.c \
+				ft_strcpy.c \
+				ft_strncpy.c \
 
 OBJS = $(SRCS:.c=.o)
 

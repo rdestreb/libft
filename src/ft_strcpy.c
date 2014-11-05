@@ -1,18 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rdestreb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/03 15:31:29 by rdestreb          #+#    #+#             */
-/*   Updated: 2014/11/03 17:41:52 by rdestreb         ###   ########.fr       */
+/*   Created: 2014/11/05 08:52:27 by rdestreb          #+#    #+#             */
+/*   Updated: 2014/11/05 08:52:48 by rdestreb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+char	*ft_strcpy(char *dest, const char *src)
 {
-	ft_memset(s, 0, n);
+	int	i;
+
+	i = -1;
+	while (src[++i])
+		dest[i] = src[i];
+	dest[i] = 0;
+	return (dest);
 }

@@ -1,9 +1,27 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rdestreb <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2014/11/03 14:23:08 by rdestreb          #+#    #+#             */
+/*   Updated: 2014/11/03 16:03:03 by rdestreb         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+
 #ifndef LIBFT_H
 # define LIBFT_H
 
 # include <unistd.h>
 # include <string.h>
 # include <stdlib.h>
+
+void	*ft_memset(void *s, int n, size_t len);
+void	ft_bzero(void *s, size_t n);
+void	*ft_memcpy(void *dest, const void *src, size_t n);
+void	*ft_memccpy(void *dest, const void *src, int c, size_t n);
 
 void	ft_putchar(char c);
 void	ft_putstr(char const *s);
