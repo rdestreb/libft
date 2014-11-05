@@ -6,10 +6,9 @@
 /*   By: rdestreb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 14:23:08 by rdestreb          #+#    #+#             */
-/*   Updated: 2014/11/03 16:03:03 by rdestreb         ###   ########.fr       */
+/*   Updated: 2014/11/05 09:44:19 by rdestreb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #ifndef LIBFT_H
 # define LIBFT_H
@@ -35,6 +34,11 @@ void	*ft_memalloc(size_t size);
 char	*ft_itoa(int n);
 
 size_t	ft_strlen(char const *s);
+char	*ft_strdup(const char *s);
+char	*ft_strcpy(char *dest, const char *src);
+char	*ft_strncpy(char *dest, const char *src, size_t n);
+char	*ft_strcat(char *dest, const char *src);
+
 void	ft_strclr(char *s);
 void	ft_striter(char *s, void (*f)(char *));
 
