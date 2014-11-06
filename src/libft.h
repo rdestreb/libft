@@ -6,7 +6,7 @@
 /*   By: rdestreb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 14:23:08 by rdestreb          #+#    #+#             */
-/*   Updated: 2014/11/06 11:59:39 by rdestreb         ###   ########.fr       */
+/*   Updated: 2014/11/06 14:17:40 by rdestreb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,8 @@ int		ft_isdigit(int c);
 int		ft_isalnum(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);
+int		ft_toupper(int c);
+int		ft_tolower(int c);
 
 void	ft_strclr(char *s);
 void	ft_striter(char *s, void (*f)(char *));
