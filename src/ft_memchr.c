@@ -6,7 +6,7 @@
 /*   By: rdestreb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/06 15:38:22 by rdestreb          #+#    #+#             */
-/*   Updated: 2014/11/06 17:25:21 by rdestreb         ###   ########.fr       */
+/*   Updated: 2014/11/06 18:18:24 by rdestreb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	char		*p_s;
+	char			*p_s;
 	unsigned char	p_c;
 	size_t			i;
 
