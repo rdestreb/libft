@@ -6,7 +6,7 @@
 #    By: rdestreb <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/03 12:22:32 by rdestreb          #+#    #+#              #
-#    Updated: 2014/11/06 14:22:02 by rdestreb         ###   ########.fr        #
+#    Updated: 2014/11/06 15:36:26 by rdestreb         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -23,6 +23,7 @@ SRCSFILES =		ft_memset.c \
 				ft_bzero.c \
 				ft_memcpy.c \
 				ft_memccpy.c \
+				ft_memmove.c \
 				ft_strlen.c \
 				ft_strdup.c \
 				ft_strcpy.c \
