@@ -1,30 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strequ.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rdestreb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/06 16:03:00 by rdestreb          #+#    #+#             */
-/*   Updated: 2014/11/07 14:33:45 by rdestreb         ###   ########.fr       */
+/*   Created: 2014/11/07 13:41:14 by rdestreb          #+#    #+#             */
+/*   Updated: 2014/11/07 13:48:41 by rdestreb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_memcmp(const void *s1, const void *s2, size_t n)
+int	ft_strequ(char const *s1, char const *s2)
 {
-	char	*p_s1;
-	char	*p_s2;
-	size_t	i;
+	int	i;
 
-	p_s1 = (char *)s1;
-	p_s2 = (char *)s2;
 	i = -1;
-	while (++i < n)
+	if (ft_strlen(s1) == ft_strlen(s2))
 	{
-		if (p_s1[i] != p_s2[i])
-			return (p_s1[i] - p_s2[i]);
+		while (s1[++i])
+		{
+			if (s1[i] != s2[i])
+				return (0);
+		}
+		return (1);
 	}
 	return (0);
 }

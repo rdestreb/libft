@@ -1,30 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rdestreb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/06 16:03:00 by rdestreb          #+#    #+#             */
-/*   Updated: 2014/11/07 14:33:45 by rdestreb         ###   ########.fr       */
+/*   Created: 2014/11/07 13:29:59 by rdestreb          #+#    #+#             */
+/*   Updated: 2014/11/07 13:30:54 by rdestreb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_memcmp(const void *s1, const void *s2, size_t n)
+void	ft_putnbr(int n)
 {
-	char	*p_s1;
-	char	*p_s2;
-	size_t	i;
-
-	p_s1 = (char *)s1;
-	p_s2 = (char *)s2;
-	i = -1;
-	while (++i < n)
+	if (n < 0)
 	{
-		if (p_s1[i] != p_s2[i])
-			return (p_s1[i] - p_s2[i]);
+		ft_putchar('-');
+		ft_putnbr(-n);
 	}
-	return (0);
+	else if (n >= 0 && n <= 9)
+		ft_putchar(n + '0');
+	else
+	{
+		ft_putnbr(n / 10);
+		ft_putnbr(n % 10);
+	}
 }

@@ -6,7 +6,7 @@
 #    By: rdestreb <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/03 12:22:32 by rdestreb          #+#    #+#              #
-#    Updated: 2014/11/07 10:50:02 by rdestreb         ###   ########.fr        #
+#    Updated: 2014/11/07 13:59:49 by rdestreb         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -39,7 +39,6 @@ SRCSFILES =		ft_memset.c \
 				ft_strnstr.c \
 				ft_strcmp.c \
 				ft_strncmp.c \
-				ft_putstr.c \
 				ft_atoi.c \
 				ft_isalpha.c \
 				ft_isdigit.c \
@@ -49,6 +48,19 @@ SRCSFILES =		ft_memset.c \
 				ft_isspace.c \
 				ft_toupper.c \
 				ft_tolower.c \
+				ft_memalloc.c \
+				ft_strclr.c \
+				ft_striter.c \
+				ft_strequ.c \
+				ft_strnequ.c \
+				ft_putchar.c \
+				ft_putstr.c \
+				ft_putendl.c \
+				ft_putnbr.c \
+				ft_putchar_fd.c \
+				ft_putstr_fd.c \
+				ft_putendl_fd.c \
+				ft_putnbr_fd.c \
 
 OBJS = $(SRCS:.c=.o)
 
