@@ -6,7 +6,7 @@
 #    By: rdestreb <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/03 12:22:32 by rdestreb          #+#    #+#              #
-#    Updated: 2014/11/06 16:20:35 by rdestreb         ###   ########.fr        #
+#    Updated: 2014/11/07 10:50:02 by rdestreb         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -40,11 +40,13 @@ SRCSFILES =		ft_memset.c \
 				ft_strcmp.c \
 				ft_strncmp.c \
 				ft_putstr.c \
+				ft_atoi.c \
 				ft_isalpha.c \
 				ft_isdigit.c \
 				ft_isalnum.c \
 				ft_isascii.c \
 				ft_isprint.c \
+				ft_isspace.c \
 				ft_toupper.c \
 				ft_tolower.c \
 
