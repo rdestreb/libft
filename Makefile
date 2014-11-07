@@ -6,7 +6,7 @@
 #    By: rdestreb <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/03 12:22:32 by rdestreb          #+#    #+#              #
-#    Updated: 2014/11/07 16:00:12 by rdestreb         ###   ########.fr        #
+#    Updated: 2014/11/07 17:10:15 by rdestreb         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -54,6 +54,7 @@ SRCSFILES =		ft_memset.c \
 				ft_strdel.c \
 				ft_strclr.c \
 				ft_striter.c \
+				ft_striteri.c \
 				ft_strequ.c \
 				ft_strnequ.c \
 				ft_putchar.c \
