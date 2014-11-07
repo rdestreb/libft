@@ -6,7 +6,7 @@
 /*   By: rdestreb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 14:23:08 by rdestreb          #+#    #+#             */
-/*   Updated: 2014/11/07 14:02:31 by rdestreb         ###   ########.fr       */
+/*   Updated: 2014/11/07 16:00:40 by rdestreb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,9 @@ int		ft_isspace(int c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 void	*ft_memalloc(size_t size);
-
+void	ft_memdel(void **ap);
+char 	*ft_strnew(size_t size);
+void	ft_strdel(char **as);
 void	ft_strclr(char *s);
 void	ft_striter(char *s, void (*f)(char *));
 
