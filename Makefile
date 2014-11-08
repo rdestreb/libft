@@ -6,7 +6,7 @@
 #    By: rdestreb <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/03 12:22:32 by rdestreb          #+#    #+#              #
-#    Updated: 2014/11/08 14:50:07 by rdestreb         ###   ########.fr        #
+#    Updated: 2014/11/08 16:37:50 by rdestreb         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -46,6 +46,7 @@ SRCSFILES =		ft_memset.c \
 				ft_isascii.c \
 				ft_isprint.c \
 				ft_isspace.c \
+				ft_isblank.c \
 				ft_toupper.c \
 				ft_tolower.c \
 				ft_memalloc.c \
@@ -61,6 +62,7 @@ SRCSFILES =		ft_memset.c \
 				ft_strnequ.c \
 				ft_strsub.c \
 				ft_strjoin.c \
+				ft_strtrim.c \
 				ft_putchar.c \
 				ft_putstr.c \
 				ft_putendl.c \
