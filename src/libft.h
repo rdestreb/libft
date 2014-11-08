@@ -6,7 +6,7 @@
 /*   By: rdestreb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 14:23:08 by rdestreb          #+#    #+#             */
-/*   Updated: 2014/11/08 14:04:34 by rdestreb         ###   ########.fr       */
+/*   Updated: 2014/11/08 14:39:09 by rdestreb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int		ft_strequ(char const *s1, char const *s2);
 int		ft_strnequ(char const *s1, char const *s2, size_t n);
 char	*ft_strsub(char const *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *s1, char const *s2);
 
 char	*ft_itoa(int n);
 void	ft_putchar(char c);
