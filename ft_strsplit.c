@@ -6,7 +6,7 @@
 /*   By: rdestreb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/09 12:53:22 by rdestreb          #+#    #+#             */
-/*   Updated: 2014/11/10 17:35:10 by rdestreb         ###   ########.fr       */
+/*   Updated: 2014/11/10 21:19:49 by rdestreb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,15 +31,15 @@ static int	wd_cnt(char const *s, char c)
 
 char		**ft_strsplit(char const *s, char c)
 {
-	int	i;
-	int	j;
-	int	ind;
+	int		i;
+	int		j;
+	int		ind;
 	char	*tmp;
 	char	**tab;
 
 	i = -1;
 	ind = -1;
-	if (!(tab = (char **)malloc(sizeof(char) * wd_cnt(s, c) + 1)))
+	if (!(tab = (char **)ft_memalloc(sizeof(char*) * (wd_cnt(s, c) + 1))))
 		return (NULL);
 	while (s[++i])
 	{
@@ -48,21 +48,10 @@ char		**ft_strsplit(char const *s, char c)
 			j = 0;
 			while (s[i + j] && s[i + j] != c)
 				j++;
-			tmp = ft_strnew(j);
-			while (j > 0)
-			{
-				   tmp[j - 1] = s[i + j - 1];
-				   j--;
-			}
-//			ft_putstr(tmp);
-//			ft_putchar('\n');
+			tmp = ft_strsub(s, i, j);
 			tab[++ind] = tmp;
-			ft_strdel(&tmp);
 			i += j;
 		}
-//		ft_putnbr(i);
-//		ft_putchar('\n');
 	}
-	tab[ind + 1] = 0;
 	return (tab);
 }
