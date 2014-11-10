@@ -6,7 +6,7 @@
 #    By: rdestreb <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/03 12:22:32 by rdestreb          #+#    #+#              #
-#    Updated: 2014/11/09 11:32:47 by rdestreb         ###   ########.fr        #
+#    Updated: 2014/11/10 19:30:22 by rdestreb         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -15,9 +15,9 @@ NAME = libft.a
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 HEADERFILES = libft.h
-HEADERDIR = ./hdr/
+HEADERDIR = ./
 HEADER = $(addprefix $(HEADERDIR), $(HEADERFILES))
-SRCSDIR = ./src/
+SRCSDIR = ./
 SRCS = $(addprefix $(SRCSDIR), $(SRCSFILES))
 SRCSFILES =		ft_memset.c \
 				ft_bzero.c \
@@ -63,6 +63,7 @@ SRCSFILES =		ft_memset.c \
 				ft_strsub.c \
 				ft_strjoin.c \
 				ft_strtrim.c \
+				ft_strsplit.c \
 				ft_itoa.c \
 				ft_putchar.c \
 				ft_putstr.c \
