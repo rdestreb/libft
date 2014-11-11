@@ -1,7 +1,7 @@
-#include "../src/libft.h"
+#include "../libft.h"
 #include <stdio.h>
 
-int	main(void)
+int	main_atoi(void)
 {
 	char	s0[50] = "    +42";
 	char	s1[50] = " lol   -42";
@@ -14,22 +14,22 @@ int	main(void)
 	char	s8[50] = "-2147483648";
 
 	printf("Libc  : %d\n", atoi(s0));
-	printf("Libft : %d\n", ft_atoi(s0));
+	printf("Libft : %d\n\n", ft_atoi(s0));
 	printf("Libc  : %d\n", atoi(s1));
-	printf("Libft : %d\n", ft_atoi(s1));
+	printf("Libft : %d\n\n", ft_atoi(s1));
 	printf("Libc  : %d\n", atoi(s2));
-	printf("Libft : %d\n", ft_atoi(s2));
+	printf("Libft : %d\n\n", ft_atoi(s2));
 	printf("Libc  : %d\n", atoi(s3));
-	printf("Libft : %d\n", ft_atoi(s3));
+	printf("Libft : %d\n\n", ft_atoi(s3));
 	printf("Libc  : %d\n", atoi(s4));
-	printf("Libft : %d\n", ft_atoi(s4));
+	printf("Libft : %d\n\n", ft_atoi(s4));
 	printf("Libc  : %d\n", atoi(s5));
-	printf("Libft : %d\n", ft_atoi(s5));
+	printf("Libft : %d\n\n", ft_atoi(s5));
 	printf("Libc  : %d\n", atoi(s6));
-	printf("Libft : %d\n", ft_atoi(s6));
+	printf("Libft : %d\n\n", ft_atoi(s6));
 	printf("Libc  : %d\n", atoi(s7));
-	printf("Libft : %d\n", ft_atoi(s7));
+	printf("Libft : %d\n\n", ft_atoi(s7));
 	printf("Libc  : %d\n", atoi(s8));
-	printf("Libft : %d\n", ft_atoi(s8));
+	printf("Libft : %d\n\n", ft_atoi(s8));
 	return (0);
 }

@@ -1,6 +1,6 @@
-#include "../src/libft.h"
+#include "../libft.h"
 
-int	main(void)
+int	main_strclr(void)
 {
 	char	str[50] = "mdrtrololoxptdr";
 

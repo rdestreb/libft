@@ -1,14 +1,14 @@
-#include "../src/libft.h"
+#include "../libft.h"
 #include <stdio.h>
 
-int	main(void)
+int	main_strtrim(void)
 {
 	char	s0[50] = "";
 	char	s1[50] = "test";
 	char	s2[50] = "   \t\n  test    \n\t";
 	char	s3[50] = "    ceci est un test     ";
 	char	s4[50] = " ";
-	
+
 	printf("Init : %s (%p)\n", s0, s0);
 	printf("Res  : %s (%p)\n", ft_strtrim(s0), ft_strtrim(s0));
 	printf("Init : %s (%p)\n", s1, s1);
@@ -19,6 +19,6 @@ int	main(void)
 	printf("Res  : %s (%p)\n", ft_strtrim(s3), ft_strtrim(s3));
 	printf("Init : %s (%p)\n", s4, s4);
 	printf("Res  : %s (%p)\n", ft_strtrim(s4), ft_strtrim(s4));
-	
+
 	return (0);
 }

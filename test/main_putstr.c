@@ -1,6 +1,6 @@
-#include "../src/libft.h"
+#include "../libft.h"
 
-int	main()
+int	main_putstr()
 {
   char	str[50] = "mon cul sur la commode";
 

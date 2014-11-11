@@ -1,9 +1,10 @@
-#include "../src/libft.h"
+#include "../libft.h"
 #include <stdio.h>
 
-int	main(void)
+
+int	main_strstr(void)
 {
-	char	*s0 = "";
+	char	s0[2] = "";
 	char	s1[50] = "voyons si tes verifs montrent que ce test est OK";
 	char	s2[50] = "test";
 	char	s3[50] = "coucou";

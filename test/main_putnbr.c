@@ -1,6 +1,6 @@
-#include "../src/libft.h"
+#include "../libft.h"
 
-int	main()
+int	main_putnbr()
 {
   int	n = 2147483647;
   int	m = -2147483648;
