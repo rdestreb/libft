@@ -1,7 +1,7 @@
-#include "../src/libft.h"
+#include "../libft.h"
 #include "stdio.h"
 
-int	main(void)
+int	main_strdup(void)
 {
 	char	test[10] = "!test1";
 

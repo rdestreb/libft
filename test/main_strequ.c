@@ -1,7 +1,7 @@
-#include "../src/libft.h"
+#include "../libft.h"
 #include "stdio.h"
 
-int	main(void)
+int	main_strequ(void)
 {
 	char	s0[50] = "";
 	char	s1[50] = "trololo";
@@ -16,21 +16,21 @@ int	main(void)
 	ft_putstr("__TEST FT_STRCPY__\n");
 	printf("%s %s %s %s\n", "Dest :", s1, "Src :", s5);
 	printf("%s %s\n", "Libc  :", strcpy(s1, s5));
-	printf("%s %s\n", "Libft :", ft_strcpy(s2, s5));
+	printf("%s %s\n\n", "Libft :", ft_strcpy(s2, s5));
 	printf("%s %s %s %s\n", "Dest :", s1, "Src :", s0);
 	printf("%s %s\n", "Libc  :", strcpy(s1, s0));
-	printf("%s %s\n", "Libft :", ft_strcpy(s2, s0));
+	printf("%s %s\n\\n", "Libft :", ft_strcpy(s2, s0));
 
 	ft_putstr("__TEST FT_STRNCPY__\n");
 	printf("%s %s %s %s %s %d\n", "Dest :", s1, "Src :", s3, "n =", 3);
 	printf("%s %s\n", "Libc  :", strncpy(s1, s3, 3));
-	printf("%s %s\n", "Libft :", ft_strncpy(s2, s3, 3));
+	printf("%s %s\n\n", "Libft :", ft_strncpy(s2, s3, 3));
 	printf("%s %s %s %s %s %d\n", "Dest :", s1, "Src :", s3, "n =", 0);
 	printf("%s %s\n", "Libc  :", strncpy(s1, s3, 0));
-	printf("%s %s\n", "Libft :", ft_strncpy(s2, s3, 0));
+	printf("%s %s\n\n", "Libft :", ft_strncpy(s2, s3, 0));
 	printf("%s %s %s %s %s %d\n", "Dest :", s1, "Src :", s3, "n =", 6);
 	printf("%s %s\n", "Libc  :", strncpy(s1, s3, 6));
-	printf("%s %s\n", "Libft :", ft_strncpy(s2, s3, 6));
+	printf("%s %s\n\n", "Libft :", ft_strncpy(s2, s3, 6));
 
 	ft_putstr("__TEST FT_STREQU__\n");
 	printf("%s %s\n %d\n", s1, s2, ft_strequ(s1, s2));
