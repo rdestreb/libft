@@ -19,7 +19,7 @@ int	main_strequ(void)
 	printf("%s %s\n\n", "Libft :", ft_strcpy(s2, s5));
 	printf("%s %s %s %s\n", "Dest :", s1, "Src :", s0);
 	printf("%s %s\n", "Libc  :", strcpy(s1, s0));
-	printf("%s %s\n\\n", "Libft :", ft_strcpy(s2, s0));
+	printf("%s %s\n\n", "Libft :", ft_strcpy(s2, s0));
 
 	ft_putstr("__TEST FT_STRNCPY__\n");
 	printf("%s %s %s %s %s %d\n", "Dest :", s1, "Src :", s3, "n =", 3);
@@ -33,10 +33,10 @@ int	main_strequ(void)
 	printf("%s %s\n\n", "Libft :", ft_strncpy(s2, s3, 6));
 
 	ft_putstr("__TEST FT_STREQU__\n");
-	printf("%s %s\n %d\n", s1, s2, ft_strequ(s1, s2));
-	printf("%s %s\n %d\n", s1, s3, ft_strequ(s1, s3));
-	printf("%s %s\n %d\n", s1, s4, ft_strequ(s1, s4));
-	printf("%s %s\n %d\n", s0, s0, ft_strequ(s0, s0));
+	printf("%s %s\n Return = %d\n", s1, s2, ft_strequ(s1, s2));
+	printf("%s %s\n Return = %d\n", s1, s3, ft_strequ(s1, s3));
+	printf("%s %s\n Return = %d\n", s1, s4, ft_strequ(s1, s4));
+	printf("%s %s\n Return = %d\n", s0, s0, ft_strequ(s0, s0));
 
 	ft_putstr("__TEST FT_STRNEQU__\n");
 	printf("%s %s %s%d\n %d\n", s1, s2, "; n = ", 1, ft_strnequ(s1, s2, 1));
@@ -48,8 +48,8 @@ int	main_strequ(void)
 	ft_putstr("__TEST FT_STRSUB__\n");
 	printf("Init : %s (%p)\n", s6, s6);
 	printf("Res  : %s (%p)\n", ft_strsub(s6, 3, 2), ft_strsub(s6, 3, 2));
-	printf("Init : %s (%p)\n", s6, s6);
-	printf("Res  : %s (%p)\n", ft_strsub(s6, 0, 10), ft_strsub(s6, 0, 10));
+	printf("Init : %s (%p)\n", s7, s7);
+	printf("Res  : %s (%p)\n", ft_strsub(s7, 0, 10), ft_strsub(s7, 0, 10));
 
 	ft_putstr("__TEST FT_STRJOIN__\n");
 	printf("Init : %s (%p) %s (%p)\n", s7, s7, s8, s8);

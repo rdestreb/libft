@@ -31,14 +31,14 @@ int	main_striter(void)
 	char	str2[50] = "abcdef";
 
 	ft_putstr("__TEST STRITER__\n");
-	ft_putendl(str);
+	printf("Attendu  : 123456789\n");
 	ft_striter(str, plusun);
-	ft_putendl(str);
+	printf("Resultat : %s\n", str);
 
 	ft_putstr("__TEST STRITERI__\n");
-	ft_putendl(str2);
+	printf("Attendu  : acegik\n");
 	ft_striteri(str2, plusi);
-	ft_putendl(str2);
+	printf("Resultat : %s\n", str2);
 
 	ft_putstr("__TEST STRMAP__\n");
 	printf("Init : %s (%p)\n", str2, str2);
@@ -46,7 +46,7 @@ int	main_striter(void)
 
 	ft_putstr("__TEST STRMAPI__\n");
 	printf("Init : %s (%p)\n", str, str);
-	printf("Res  : %s (%p)\n", ft_strmapi(str, char_plusi), ft_strmapi(str, char_plusi));
+	printf("Resultat : %s (%p)\n", ft_strmapi(str, char_plusi), ft_strmapi(str, char_plusi));
 
 	return (0);
 }

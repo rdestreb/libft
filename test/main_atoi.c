@@ -13,6 +13,7 @@ int	main_atoi(void)
 	char	s7[50] = "2147483647";
 	char	s8[50] = "-2147483648";
 
+	ft_putstr("__TEST ATOI__\n");
 	printf("Libc  : %d\n", atoi(s0));
 	printf("Libft : %d\n\n", ft_atoi(s0));
 	printf("Libc  : %d\n", atoi(s1));

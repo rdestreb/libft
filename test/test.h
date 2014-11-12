@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <bsd/string.h>
 
 int	main_atoi(void);
 int	main_is(void);

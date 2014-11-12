@@ -21,14 +21,14 @@ SRC =	main_atoi.c \
 		main_striter.c \
 		main_strlen.c \
 		main_strsplit.c \
-		main_strtrim.c
-		# main_strstr.c \
+		main_strtrim.c \
+		main_strstr.c \
 
 
 OBJS = $(SCRFILES:.c=.o)
-CC = clang
+CC = gcc
 CFLAGS = -g -Wall -Werror -Wextra -O3
-LDFLAGS = -L ../ -lft -lbsd
+LDFLAGS = -L ../ -lft
 LIBFT = ../libft.a
 
 .PHONY: all, clean, fclean, re

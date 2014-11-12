@@ -1,6 +1,5 @@
 #include "../libft.h"
 #include <stdio.h>
-#include <bsd/string.h>
 
 int	main_strcat(void)
 {
