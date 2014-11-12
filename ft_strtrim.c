@@ -6,7 +6,7 @@
 /*   By: rdestreb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/08 15:31:07 by rdestreb          #+#    #+#             */
-/*   Updated: 2014/11/08 18:10:09 by rdestreb         ###   ########.fr       */
+/*   Updated: 2014/11/12 21:00:39 by rdestreb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,19 +15,18 @@
 char	*ft_strtrim(char const *s)
 {
 	char	*new_s;
-	int		i;
 	int		start;
 	int		end;
 
-	i = 0;
+	if (!s)
+		return (NULL);
 	start = 0;
 	end = ft_strlen(s) - 1;
-	while (ft_isblank(s[start]))
+	while (s[start] && ft_isblank(s[start]))
 		start++;
-	while (ft_isblank(s[end]))
+	while (end > start && ft_isblank(s[end]))
 		end--;
-	new_s = ft_strnew(end - start + 1);
-	while (start <= end)
-		new_s[i++] = s[start++];
+	new_s = ft_strsub(s, start, end - start + 1);
 	return (new_s);
 }
+
