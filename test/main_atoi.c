@@ -3,7 +3,7 @@
 
 int	main_atoi(void)
 {
-	char	s0[50] = "    +42";
+	char	s0[50] = "-123";
 	char	s1[50] = " lol   -42";
 	char	s2[50] = "\n\f\t\v\r-42";
 	char	s3[50] = "    -42ahah42";

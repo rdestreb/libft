@@ -10,6 +10,7 @@ int	main_strtrim(void)
 	char	s4[50] = " ";
 
 	ft_putstr("__TEST STRTRIM__\n");
+	ft_strtrim(NULL);
 	printf("Init : %s (%p)\n", s0, s0);
 	printf("Res  : %s (%p)\n\n", ft_strtrim(s0), ft_strtrim(s0));
 	printf("Init : %s (%p)\n", s1, s1);
