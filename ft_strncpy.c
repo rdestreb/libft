@@ -14,15 +14,20 @@
 
 char	*ft_strncpy(char *dest, const char *src, size_t n)
 {
-	size_t i;
+	size_t	i;
+	int		flag;
 
 	i = -1;
+	flag = 0;
 	while (++i < n)
 	{
-		if (src[i])
+		if (!flag && src[i])
 			dest[i] = src[i];
 		else
+		{
 			dest[i] = 0;
+			flag++;
+		}
 	}
 	return (dest);
 }
