@@ -3,11 +3,11 @@
 
 int	main_atoi(void)
 {
-	char	s0[50] = "-123";
+	char	s0[50] = "42";
 	char	s1[50] = " lol   -42";
 	char	s2[50] = "\n\f\t\v\r-42";
-	char	s3[50] = "    -42ahah42";
-	char	s4[50] = "    42-42";
+	char	s3[50] = "    - 42ahah42";
+	char	s4[50] = "    +-42-42";
 	char	s5[50] = "lol";
 	char	s6[50] = "0";
 	char	s7[50] = "2147483647";
