@@ -6,7 +6,7 @@
 /*   By: rdestreb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/08 14:34:05 by rdestreb          #+#    #+#             */
-/*   Updated: 2014/11/08 15:09:42 by rdestreb         ###   ########.fr       */
+/*   Updated: 2014/11/12 18:23:44 by rdestreb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	int		i;
 	int		j;
 
+	if (!s1 || !s2)
+		return (NULL);
 	cat = ft_strnew(ft_strlen(s1) + ft_strlen(s2));
 	i = -1;
 	while (s1[++i])

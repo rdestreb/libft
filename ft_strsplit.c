@@ -6,7 +6,7 @@
 /*   By: rdestreb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/09 12:53:22 by rdestreb          #+#    #+#             */
-/*   Updated: 2014/11/10 21:19:49 by rdestreb         ###   ########.fr       */
+/*   Updated: 2014/11/12 20:42:17 by rdestreb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ char		**ft_strsplit(char const *s, char c)
 
 	i = -1;
 	ind = -1;
-	if (!(tab = (char **)ft_memalloc(sizeof(char*) * (wd_cnt(s, c) + 1))))
+	if (!s || !(tab = (char **)ft_memalloc(sizeof(char*) * (wd_cnt(s, c) + 1))))
 		return (NULL);
 	while (s[++i])
 	{
@@ -50,7 +50,7 @@ char		**ft_strsplit(char const *s, char c)
 				j++;
 			tmp = ft_strsub(s, i, j);
 			tab[++ind] = tmp;
-			i += j;
+			i += j - 1;
 		}
 	}
 	return (tab);
