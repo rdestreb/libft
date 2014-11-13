@@ -6,7 +6,7 @@
 /*   By: rdestreb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/08 15:31:07 by rdestreb          #+#    #+#             */
-/*   Updated: 2014/11/12 21:00:39 by rdestreb         ###   ########.fr       */
+/*   Updated: 2014/11/13 13:35:56 by rdestreb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,4 +29,3 @@ char	*ft_strtrim(char const *s)
 	new_s = ft_strsub(s, start, end - start + 1);
 	return (new_s);
 }
-

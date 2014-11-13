@@ -6,7 +6,7 @@
 /*   By: rdestreb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/07 13:52:09 by rdestreb          #+#    #+#             */
-/*   Updated: 2014/11/12 17:47:34 by rdestreb         ###   ########.fr       */
+/*   Updated: 2014/11/13 13:35:34 by rdestreb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_striter(char *s, void (*f)(char *))
 {
 	if (!s || !f)
-		return;
+		return ;
 	while (*s)
 		f(s++);
 }
