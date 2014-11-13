@@ -6,7 +6,7 @@
 /*   By: rdestreb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 15:03:26 by rdestreb          #+#    #+#             */
-/*   Updated: 2014/11/06 10:09:22 by rdestreb         ###   ########.fr       */
+/*   Updated: 2014/11/13 18:31:51 by rdestreb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,13 @@ char	*ft_strnstr(const char *tosearch, const char *tofind, size_t n)
 	size_t	j;
 
 	i = -1;
-	if (!(tofind[0]))
+	if (!(tofind[0]) || n == 0)
 		return ((char*)tosearch);
 	while (tosearch[++i] && i < n && (ft_strlen(tofind) + i <= n))
 	{
+		j = 0;
 		if (tosearch[i] == tofind[j])
 		{
-			j = 0;
 			while (tosearch[i + j] == tofind[j] && tosearch[i + j]
 					&& tofind[j])
 			{
