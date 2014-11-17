@@ -13,7 +13,7 @@ int	main_strcat(void)
 	char	s7[50] = "test";
 	char	s8[50] = "test";
 	char	s9[50] = "test";
-	char	s10[50] = "test";
+//	char	s10[50] = "test";
 	char	s11[50] = "test";
 	char	s12[50] = "test";
 	char	s13[50] = "test";
@@ -40,7 +40,7 @@ int	main_strcat(void)
     printf("%s %zd (%s)\n\n", "Libft : ", ft_strlcat(s3, "icule", 0), s3);
 	printf("%s %zd (%s)\n", "Libc  : ", strlcat(s8, "icule", 1), s8);
     printf("%s %zd (%s)\n\n", "Libft : ", ft_strlcat(s9, "icule", 1), s9);
-	printf("%s %zd (%s)\n", "Libc  : ", strlcat(s10, "icule", 4), s10);
+//	printf("%s %zd (%s)\n", "Libc  : ", strlcat(s10, "icule", 4), s10);
     printf("%s %zd (%s)\n\n", "Libft : ", ft_strlcat(s11, "icule", 4), s11);
 	printf("%s %zd (%s)\n", "Libc  : ", strlcat(s12, "icule", 5), s12);
     printf("%s %zd (%s)\n\n", "Libft : ", ft_strlcat(s13, "icule", 5), s13);
