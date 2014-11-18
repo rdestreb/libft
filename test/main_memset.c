@@ -7,21 +7,22 @@ int	main_memset()
 	char *alloc;
 	int	i;
 
-	i = 0;
-	alloc = (char*)ft_memalloc(sizeof(char) * 10);
 	ft_putstr("__TEST MEMSET__\n");
-	printf("memset(test, 0, 5)\n");
+	ft_putstr("memset(test, 0, 5)\n");
 	memset(test, 0, 5);
-	for (i = 0; i < 10; ++i)
+	i = -1;
+	while (++i < 10)
 	{
-		printf("[%d] ", test[i]);
+		printf("[%d]\n", test[i]);
 	}
-
+	ft_putchar ('\n');
 	ft_putstr("\n__TEST MEMALLOC__\n");
-	printf("\n(char*)ft_memalloc(sizeof(char) * 10)\n");
+	ft_putstr("\n(char*)ft_memalloc(sizeof(char) * 10)\n");
+	alloc = (char*)ft_memalloc(sizeof(char) * 10);
 	for (i = 0; i < 10; ++i)
 	{
-		printf("[%d] ", alloc[i]);
+		printf("[%d]", alloc[i]);
 	}
+	ft_putchar ('\n');
 	return (0);
 }
