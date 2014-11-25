@@ -20,6 +20,8 @@ int	main_strstr(void)
 	ft_putstr("TEST __STRNSTR__\n");
 	printf("%s %s\n", "Libc  : ", strnstr(s1, s0, 0));
 	printf("%s %s\n\n", "Libft : ", ft_strnstr(s1, s0, 0));
+	printf("%s %s\n", "Libc  : ", strnstr(s1, s2, 0));
+	printf("%s %s\n\n", "Libft : ", ft_strnstr(s1, s2, 0));
 	printf("%s %s\n", "Libc  : ", strnstr(s1, s2, 10));
 	printf("%s %s\n\n", "Libft : ", ft_strnstr(s1, s2, 10));
 	printf("%s %s\n", "Libc  : ", strnstr(s1, s2, 39));
