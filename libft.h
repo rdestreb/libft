@@ -6,13 +6,14 @@
 /*   By: rdestreb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 14:23:08 by rdestreb          #+#    #+#             */
-/*   Updated: 2014/11/10 21:23:02 by rdestreb         ###   ########.fr       */
+/*   Updated: 2014/11/26 17:21:28 by rdestreb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# define BUFF_SIZE 42
 # include <unistd.h>
 # include <string.h>
 # include <stdlib.h>
@@ -71,5 +72,6 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char const *s, int fd);
 void	ft_putendl_fd(char const *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+int		get_next_line(int const fd, char **line);
 
 #endif
